@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/user.css">
+</head>
+<body>
+<%- include employerMenu.ejs %>
+<section id="mainSection">
+  <div class="tabContainer">
+    <div class="buttonContainer">
+        <button onclick="showPanel(0,'#2196f3')">Hotel</button>
+        <button onclick="showPanel(1,'#ff5722')">Villa</button>
+    </div>
+    <div class="tabPanel">
+        <% bookins.forEach(function(bookin){ %>
+            <div class="villaBooking">
+                <div class="bkimg">
+                    <img src="/images/villa.jpg" class="bk-cover">
+                </div>
+                <div class="bkInfo">
+                    <span>Hotel :  <%= bookin.hotel %></span><br>
+                    <span>reserve le :  <%= bookin.fullTime %></span><br>
+                    <a href="/cancelHb/<%= bookin._id %>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer votre réservation ?');"><button class="cancel">Annuler</button></a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+    <div class="tabPanel">
+        <% items.forEach(function(item){ %>
+        <div class="villaBooking">
+            <div class="bkimg">
+                <img src="/images/villa.jpg" class="bk-cover">
+            </div>
+            <div class="bkInfo">
+                <span>Adresse :  <%= item.adresse %></span><br>
+                <span>Ville :  <%= item.ville %></span><br>
+                <span>Prix :  <%= item.prix %></span><br>
+                <span>reserve le :  <%= item.fullTime %></span><br>
+                <a href="/cancelVb/<%= item._id %>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer votre réservation ?');"><button class="cancel">Annuler</button></a>
+            </div>
+        </div>
+            <% }) %>
+    </div>
+  </div>
+<script src="/javascripts/tabScript.js"></script>
+</section>
+</body>
+</html>

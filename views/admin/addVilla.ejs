@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<script>
+    function villaCover(){
+        var x = document.getElementById("file-upload");
+        var txt = "";
+        if ('files' in x) {
+            if (x.files.length == 0) {
+                txt = "Select one or more files.";
+            } else {
+                for (var i = 0; i < x.files.length; i++) {
+                    var file = x.files[i];
+                    if ('name' in file) {
+                        txt += file.name ;
+                    }
+                }
+            }
+        }
+        else {
+            if (x.value == "") {
+                txt += "Select one or more files.";
+            } else {
+                txt += "The files property is not supported by your browser!";
+                txt  += " || The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead.
+            }
+        }
+        document.getElementById("file-upload-filename").innerHTML = txt;
+    }
+</script>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+    <div class="villa-container">
+
+        <form action="/addVilla" method="post">
+            <div class="villa-cover">
+                <img src="/images/villa.jpg" class="vCover">
+            </div>
+            <div class="villa-body">
+                <% if (typeof msg !== "undefined") { %>
+                    <div class="villa-tab">
+                        <div class="error-container">
+                            <span class="error-msg"><%= typeof msg != 'undefined' ? msg : '' %></span>
+                        </div>
+                    </div>
+                <% } %>
+                <!--<table class="villa-tab">
+                    <tr>
+                        <td>Image de villa :</td>
+                        <td>
+                            <div class="villa-file-wrapper">
+                                <input type="file"  id="file-upload" onchange="villaCover()"  name="myImage" >
+                                <label for="file" class="villa-label-file"><i class="fas fa-folder-open"></i> </label>
+                                <div class="villa-filename" id="file-upload-filename" ></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                -->
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Adresse :</td>
+                        <td><input type="text" class="villa-input" placeholder="Adresse" name="adresse"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <select class="villa-input" name="ville">
+                                <option value="0">Select une ville :</option>
+                                <option value="Ariana">Ariana</option>
+                                <option value="Beja">Beja</option>
+                                <option value="Ben Arous">Ben Arous</option>
+                                <option value="Bizerte">Bizerte</option>
+                                <option value="Gabes">Gabes</option>
+                                <option value="Gafsa">Gafsa</option>
+                                <option value="Jendouba">Jendouba</option>
+                                <option value="Kairouan">Kairouan</option>
+                                <option value="Kasserine">Kasserine</option>
+                                <option value="Kebili">Kebili</option>
+                                <option value="Le Kef">Le Kef</option>
+                                <option value="Mahdia">Mahdia</option>
+                                <option value="La Manouba">La Manouba</option>
+                                <option value="Médenine">Médenine</option>
+                                <option value="Monastir">Monastir</option>
+                                <option value="Nabeul">Nabeul</option>
+                                <option value="Sfax">Sfax</option>
+                                <option value="Sidi Bouzid">Sidi Bouzid</option>
+                                <option value="Siliana">Siliana</option>
+                                <option value="Sousse">Sousse</option>
+                                <option value="Tataouine">Tataouine</option>
+                                <option value="Tozeur">Tozeur</option>
+                                <option value="Tunis">Tunis</option>
+                                <option value="Zaghouan">Zaghouan</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Le terrain :</td>
+                        <td><input type="text" class="villa-input" placeholder="Terrain en m²" name="terrain"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>La Maison :</td>
+                        <td><input type="text" class="villa-input" placeholder="Surface en m²" name="surface"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="text" class="villa-input" placeholder="Chambre(s)" name="chambre"><br>
+                            <input type="text" class="villa-input" placeholder="Salle de bain(s)" name="salleDeBain"><br>
+                            <input type="text" class="villa-input" placeholder="Toilette(s)" name="toilette"><br>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Prix :</td>
+                        <td><input type="text" class="villa-input" placeholder="Prix en DT" name="prix"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Date :</td>
+                        <td><input type="date" class="villa-input"  placeholder="Date debut : DD-MM-YYYY" name="dateD"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="date" class="villa-input" placeholder="Date fin : DD-MM-YYYY" name="dateF"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Description :</td>
+                        <td><textarea class="textarea" placeholder="Description" name="description"></textarea></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td><input type="submit" value="ENREGISTRER" class="valid"></td>
+                        <td>
+                            <input type="reset" value="ANNULER" class="cancel">
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>

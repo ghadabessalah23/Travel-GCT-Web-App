@@ -1,0 +1,36 @@
+<div id="userMenu">
+    <div class="menu-wrapper">
+        <div class="mainMenu">
+            <div class="logo-wrapper">
+                <h1 class="logo"><i class="material-icons">&#xeb3e;</i>travel</h1>
+            </div>
+            <div class="HsearchBox">
+                <form action="/employerSearch" method="post">
+                    <input type="text"  class="input search-input"  placeholder="Recherche..." name="searchTxt">
+                    <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="SessionBox">
+                <ul id="menu">
+                    <li><img src="/images/defaultuserimage.png" class="userLogo"><li>
+                    <li>
+                        <div class="usrInfo">
+                            <span><%= nom %> <%= prenom %></span><br>
+                            <span><%= email %></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a href="/employer" class="purple"><i class="fas fa-hotel"></i> Hotel</a>
+                    <a href="/employerVilla" class="orange"><i class="fas fa-home"></i> Villa</a>
+                    <a href="/employerBookin/<%= _id %>" class="aqua"><i class="fas fa-list-ul"></i> Reservation</a>
+                    <a href="/employerProfile" class="red"><i class ="fa fa-user"></i> Profil</a>
+                    <a href="/logout" class="gold"><i class="fas fa-sign-in-alt"> </i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

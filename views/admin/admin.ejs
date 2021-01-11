@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<script>
+    function greenFn() {
+        document.getElementById("sheet-ups").style.display = "block";
+        document.getElementById("pdf-ups").style.display = "none";
+        document.getElementById("word-ups").style.display = "none";
+    }
+    function redFn() {
+        document.getElementById("sheet-ups").style.display = "none";
+        document.getElementById("pdf-ups").style.display = "block";
+        document.getElementById("word-ups").style.display = "none";
+    }
+    function blueFn() {
+        document.getElementById("sheet-ups").style.display = "none";
+        document.getElementById("pdf-ups").style.display = "none";
+        document.getElementById("word-ups").style.display = "block";
+    }
+
+    function exel(){
+        var x = document.getElementById("file-upload");
+        var txt = "";
+        if ('files' in x) {
+            if (x.files.length == 0) {
+                txt = "Select one or more files.";
+            } else {
+                for (var i = 0; i < x.files.length; i++) {
+                    var file = x.files[i];
+                    if ('name' in file) {
+                        txt += file.name ;
+                    }
+                }
+            }
+        }
+        else {
+            if (x.value == "") {
+                txt += "Select one or more files.";
+            } else {
+                txt += "The files property is not supported by your browser!";
+                txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead.
+            }
+        }
+        document.getElementById("file-upload-filename").innerHTML = txt;
+    }
+
+    function pdf(){
+        var x = document.getElementById("file-upload1");
+        var txt = "";
+        if ('files' in x) {
+            if (x.files.length == 0) {
+                txt = "Select one or more files.";
+            } else {
+                for (var i = 0; i < x.files.length; i++) {
+                    var file = x.files[i];
+                    if ('name' in file) {
+                        txt += file.name ;
+                    }
+                }
+            }
+        }
+        else {
+            if (x.value == "") {
+                txt += "Select one or more files.";
+            } else {
+                txt += "The files property is not supported by your browser!";
+                txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead.
+            }
+        }
+        document.getElementById("file-upload-filename1").innerHTML = txt;
+    }
+
+    function word(){
+        var x = document.getElementById("file-upload2");
+        var txt = "";
+        if ('files' in x) {
+            if (x.files.length == 0) {
+                txt = "Select one or more files.";
+            } else {
+                for (var i = 0; i < x.files.length; i++) {
+                    var file = x.files[i];
+                    if ('name' in file) {
+                        txt += file.name ;
+                    }
+                }
+            }
+        }
+        else {
+            if (x.value == "") {
+                txt += "Select one or more files.";
+            } else {
+                txt += "The files property is not supported by your browser!";
+                txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead.
+            }
+        }
+        document.getElementById("file-upload-filename2").innerHTML = txt;
+    }
+</script>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+    <a onclick="greenFn()"> <div class="Filebox sheet" id="sheet"><i class="fas fa-file-excel"></i></div></a>
+    <a onclick="redFn()"><div class="Filebox pdf" id="pdf"><i class="fas fa-file-pdf"></i></div></a>
+    <a onclick="blueFn()"> <div class="Filebox word" id="word"><i class="fas fa-file-word"></i></div></a>
+
+    <fieldset class="file-form">
+
+        <div id="sheet-ups">
+            <%= typeof msg != 'undefined' ? msg : '' %>
+            <h1 class="label">Ce formulaire accepte uniquement les fichiers XLSX & XLS </h1>
+            <form action="/invokeExel" method="post" enctype="multipart/form-data">
+                <div class="file-wrapper">
+                    <input type="file" id="file-upload" onchange="exel()" name="sheetsFiles">
+                    <label for="file" class="label-file" ><i class="fas fa-folder-open"></i> Browse</label>
+                    <div class="filename" id="file-upload-filename"></div>
+                </div>
+                <button class="upload-btn" type="submit"><i class="fas fa-cloud-upload-alt"></i> UPLOAD</button>
+            </form>
+        </div>
+
+        <div id="pdf-ups">
+            <h1 class="label">Ce formulaire accepte uniquement les fichiers PDF </h1>
+            <form action="/invokePdf" method="post" enctype="multipart/form-data">
+                <div class="file-wrapper">
+                    <input type="file"  id="file-upload1" onchange="pdf()" name="pdfFiles">
+                    <label for="file" class="label-file"><i class="fas fa-folder-open"></i> Browse</label>
+                    <div class="filename" id="file-upload-filename1"></div>
+                </div>
+                <button class="upload-btn"><i class="fas fa-cloud-upload-alt"></i> UPLOAD</button>
+            </form>
+        </div>
+
+        <div id="word-ups">
+            <h1 class="label">Ce formulaire accepte uniquement les fichiers DOCX </h1>
+            <form action="/invokeWord" method="post" enctype="multipart/form-data">
+                <div class="file-wrapper">
+                    <input type="file"  id="file-upload2" onchange="word()" name="wordFiles">
+                    <label for="file" class="label-file"><i class="fas fa-folder-open"></i> Browse</label>
+                    <div class="filename" id="file-upload-filename2"></div>
+                </div>
+                <button class="upload-btn"><i class="fas fa-cloud-upload-alt"></i> UPLOAD</button>
+            </form>
+        </div>
+
+    </fieldset>
+
+</section>
+</body>
+</html>

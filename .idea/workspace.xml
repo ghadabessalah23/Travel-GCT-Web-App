@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="456e0d1d-1591-4f91-a94a-6adbb3da7d99" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="983" column="25" selection-start-line="983" selection-start-column="20" selection-end-line="983" selection-end-column="25" />
+              <folding>
+                <element signature="e#869#927#0" />
+                <element signature="e#1000#1065#0" />
+                <element signature="e#1112#2926#0" />
+                <element signature="e#3013#3072#0" />
+                <element signature="e#4299#4569#0" />
+                <element signature="e#4626#5596#0" />
+                <element signature="e#5654#5771#0" />
+                <element signature="e#5800#5899#0" />
+                <element signature="e#5956#6163#0" />
+                <element signature="e#6217#8949#0" />
+                <element signature="e#9046#9160#0" />
+                <element signature="e#9188#9285#0" />
+                <element signature="e#9338#9522#0" />
+                <element signature="e#9575#11314#0" />
+                <element signature="e#11419#11533#0" />
+                <element signature="e#11562#11661#0" />
+                <element signature="e#11716#11901#0" />
+                <element signature="e#11955#13454#0" />
+                <element signature="e#13544#13808#0" />
+                <element signature="e#13861#14131#0" />
+                <element signature="e#14184#16416#0" />
+                <element signature="e#15812#16408#0" />
+                <element signature="e#16470#16830#0" />
+                <element signature="e#17102#17497#0" />
+                <element signature="e#17557#17984#0" />
+                <element signature="e#18044#19089#0" />
+                <element signature="e#19142#19304#0" />
+                <element signature="e#19358#19731#0" />
+                <element signature="e#19994#20373#0" />
+                <element signature="e#20421#20580#0" />
+                <element signature="e#20635#20910#0" />
+                <element signature="e#20959#23787#0" />
+                <element signature="e#23839#24107#0" />
+                <element signature="e#24163#26275#0" />
+                <element signature="e#27344#28176#0" />
+                <element signature="e#29268#29649#0" />
+                <element signature="e#29732#30506#0" />
+                <element signature="e#30563#30987#0" />
+                <element signature="e#30907#31331#0" />
+                <element signature="e#30914#31458#0" />
+                <element signature="e#31532#31817#0" />
+                <element signature="e#31881#34099#0" />
+                <element signature="e#34150#34424#0" />
+                <element signature="e#34482#34766#0" />
+                <element signature="e#34828#37023#0" />
+                <element signature="e#37068#37141#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/employer/employer_search.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/employer/employer_hotel.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/employer/employer_villa.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="50" column="16" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="50" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>btn</find>
+      <find>login-submit</find>
+      <find>Sess</find>
+      <find>drop</find>
+      <find>main</find>
+      <find>bkInfo</find>
+      <find>villaBooking</find>
+      <find>takei</find>
+      <find>invoke</find>
+      <find>users</find>
+      <find>employerHotel</find>
+      <find>item</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/navigation.ejs" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/views/login.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/views/register.ejs" />
+        <option value="$PROJECT_DIR$/lib/User.js" />
+        <option value="$PROJECT_DIR$/views/admin/profile.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/updateVilla.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/addVilla.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/addAgences.ejs" />
+        <option value="$PROJECT_DIR$/views/agences/AgenceMenu.ejs" />
+        <option value="$PROJECT_DIR$/views/agences/agenceMenu.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/adminLeftSideBar.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/adminSearch.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/admin.ejs" />
+        <option value="$PROJECT_DIR$/lib/Villa.js" />
+        <option value="$PROJECT_DIR$/views/admin/reservation_Villa.ejs" />
+        <option value="$PROJECT_DIR$/views/employer/employer_villa.ejs" />
+        <option value="$PROJECT_DIR$/views/employer/employer_profile.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/user.css" />
+        <option value="$PROJECT_DIR$/views/employer/employer.ejs" />
+        <option value="$PROJECT_DIR$/views/agences/agence_profile.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/agence.css" />
+        <option value="$PROJECT_DIR$/views/employer/employer_hotel.ejs" />
+        <option value="$PROJECT_DIR$/lib/Bookin.js" />
+        <option value="$PROJECT_DIR$/views/agences/agence.ejs" />
+        <option value="$PROJECT_DIR$/views/employer/employer_bookin.ejs" />
+        <option value="$PROJECT_DIR$/views/employer/employerMenu.ejs" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/employer/employer_search.ejs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Travel-GCT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Travel-GCT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Travel-GCT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Travel-GCT" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Travel-GCT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Travel-GCT" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Travel-GCT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Travel-GCT" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Travel-GCT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Travel-GCT" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Travel-GCT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Travel-GCT" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="agences" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Travel-GCT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Travel-GCT" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="employer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anoir\WebstormProjects\Travel-GCT\public" />
+      <recent name="C:\Users\Anoir\WebstormProjects\Travel-GCT\lib" />
+      <recent name="C:\Users\Anoir\WebstormProjects\Travel-GCT\views" />
+      <recent name="C:\Users\Anoir\WebstormProjects\Travel-GCT\public\stylesheets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="456e0d1d-1591-4f91-a94a-6adbb3da7d99" name="Default Changelist" comment="" />
+      <created>1566639667045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566639667045</updated>
+      <workItem from="1566639668964" duration="9942000" />
+      <workItem from="1566675662914" duration="5692000" />
+      <workItem from="1566725047804" duration="581000" />
+      <workItem from="1566749378825" duration="1256000" />
+      <workItem from="1566761538354" duration="12415000" />
+      <workItem from="1566821850501" duration="590000" />
+      <workItem from="1566838906876" duration="11762000" />
+      <workItem from="1566925344565" duration="6539000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="48777000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32991454" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="GraphQL" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32991454" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/all.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/register.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/addVilla.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="154" column="67" selection-start-line="154" selection-start-column="67" selection-end-line="154" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/addAgences.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/navigation.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332">
+          <caret line="426" column="5" selection-start-line="426" selection-start-column="1" selection-end-line="426" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/agences/agenceMenu.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/agences.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/adminLeftSideBar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/adminSearch.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/admin.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/profile.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" selection-start-line="21" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/employer/employer_profile.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/gereVilla.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="44" column="134" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/updateVilla.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" selection-start-line="18" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/reservation_Villa.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Villa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/user.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1992">
+          <caret line="4" selection-start-line="4" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/agences/agence_profile.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/agence.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/employers.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/agences/agence.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Bookin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/employer/employer_bookin.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/employer/employerMenu.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="110" selection-start-line="8" selection-start-column="110" selection-end-line="8" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/villa.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/employer/employer_villa.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="50" column="16" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="50" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/employer/employer_hotel.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="983" column="25" selection-start-line="983" selection-start-column="20" selection-end-line="983" selection-end-column="25" />
+          <folding>
+            <element signature="e#869#927#0" />
+            <element signature="e#1000#1065#0" />
+            <element signature="e#1112#2926#0" />
+            <element signature="e#3013#3072#0" />
+            <element signature="e#4299#4569#0" />
+            <element signature="e#4626#5596#0" />
+            <element signature="e#5654#5771#0" />
+            <element signature="e#5800#5899#0" />
+            <element signature="e#5956#6163#0" />
+            <element signature="e#6217#8949#0" />
+            <element signature="e#9046#9160#0" />
+            <element signature="e#9188#9285#0" />
+            <element signature="e#9338#9522#0" />
+            <element signature="e#9575#11314#0" />
+            <element signature="e#11419#11533#0" />
+            <element signature="e#11562#11661#0" />
+            <element signature="e#11716#11901#0" />
+            <element signature="e#11955#13454#0" />
+            <element signature="e#13544#13808#0" />
+            <element signature="e#13861#14131#0" />
+            <element signature="e#14184#16416#0" />
+            <element signature="e#15812#16408#0" />
+            <element signature="e#16470#16830#0" />
+            <element signature="e#17102#17497#0" />
+            <element signature="e#17557#17984#0" />
+            <element signature="e#18044#19089#0" />
+            <element signature="e#19142#19304#0" />
+            <element signature="e#19358#19731#0" />
+            <element signature="e#19994#20373#0" />
+            <element signature="e#20421#20580#0" />
+            <element signature="e#20635#20910#0" />
+            <element signature="e#20959#23787#0" />
+            <element signature="e#23839#24107#0" />
+            <element signature="e#24163#26275#0" />
+            <element signature="e#27344#28176#0" />
+            <element signature="e#29268#29649#0" />
+            <element signature="e#29732#30506#0" />
+            <element signature="e#30563#30987#0" />
+            <element signature="e#30907#31331#0" />
+            <element signature="e#30914#31458#0" />
+            <element signature="e#31532#31817#0" />
+            <element signature="e#31881#34099#0" />
+            <element signature="e#34150#34424#0" />
+            <element signature="e#34482#34766#0" />
+            <element signature="e#34828#37023#0" />
+            <element signature="e#37068#37141#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/employer/employer_search.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

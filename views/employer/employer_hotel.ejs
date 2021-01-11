@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/user.css">
+    <link rel="stylesheet" href="/stylesheets/tab.css">
+</head>
+<body>
+<%- include employerMenu.ejs %>
+<section id="mainSection">
+    <table cellspacing='0' class="table">
+        <thead>
+        <tr>
+            <th scope="col">Hotel</th>
+            <th scope="col">Date</th>
+            <th scope="col">LDP</th>
+            <th scope="col">DP</th>
+            <th scope="col">PC</th>
+            <th scope="col">All-in</th>
+            <th scope="col">Soft All-in</th>
+            <th scope="col">Sup single</th>
+            <th scope="col">sup V mer</th>
+            <th scope="col">2 e 11 ans  + 2 adultes</th>
+            <th scope="col">2 e 12 ans + 1 adulte</th>
+            <th scope="col">Reduction 3 eme lit</th>
+            <th scope="col">Reduction 3eme lit</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% items.forEach(function(item){ %>
+            <tr>
+                <td><%= item.hotel %></td>
+                <td><%= item.Date %></td>
+                <td><%= item.LDP %></td>
+                <td><%= item.DP %></td>
+                <td><%= item.PC %></td>
+                <td><%= item.All_in %></td>
+                <td><%= item.Soft_All_in %></td>
+                <td><%= item.Sup_single %></td>
+                <td><%= item.sup_V_mer %></td>
+                <td><%= item.enfant_2adult %></td>
+                <td><%= item.enfant_1adult %></td>
+                <td><%= item.Reduction_3_eme_lit %></td>
+                <td><%= item.Reduction_3eme_lit %></td>
+                <td>
+                    <a href="/employerHotel/<%= item._id %>/<%= _id %>/<%= nom  %> <%= prenom  %>/<%= item.hotel%>"><button class="takeHotel"><i class="fas fa-check-circle"></i> Reserver</button></a>
+                </td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/tab.css">
+</head>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+    <div class="profile-container">
+        <div class="profile-head">
+            <h3>Agence Form </h3>
+        </div>
+        <div class="profile-body">
+            <div class="profile-logo">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <form action="/addAgences" method="post">
+                <% if (typeof msg !== "undefined") { %>
+                    <fieldset class="Sp1">
+                        <div class="error-container">
+                            <span class="error-msg"><%= typeof msg != 'undefined' ? msg : '' %></span>
+                        </div>
+                    </fieldset>
+                <% } %>
+                <fieldset class="Sp1">
+                    <input type="text" placeholder="Votre Nom" name="nom" class="input-text nom">
+                    <input type="text" placeholder="Votre Prénom" name="prenom" class="input-text prenom">
+                </fieldset>
+                <fieldset class="Sp1">
+                    <input type="text" placeholder="someone@exemple.com" name="email" class="input-text email">
+                </fieldset>
+                <fieldset class="Sp1">
+                    <input type="password" placeholder="********" name="password" class="input-text password">
+                    <input type="password" placeholder="********" name="newPassword" class="input-text newPassword">
+                </fieldset>
+                <fieldset class="Sp1">
+                    <input type="submit" value="ENREGISTRER" class="valid">
+                    <input type="reset" value="ANNULER" class="cancel">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

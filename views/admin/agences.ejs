@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/tab.css">
+</head>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+    <a href="/addAgences"><button class="addRes"><i class="fas fa-calendar-plus"></i> Ajouter Responsable</button></a>
+    <table cellspacing='0' class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% items.forEach(function(item){ %>
+            <tr>
+                <td><%= item._id %></td>
+                <td><%= item.nom %></td>
+                <td><%= item.prenom %></td>
+                <td><%= item.email %></td>
+                <td>
+                <!--<a href="/updateAgences/<%= item._id %>" onclick="return confirm('Êtes-vous sûr de vouloir mise à ajour ?');"><button class="penBtn"><i class="fas fa-pen-alt"></i></button></a>-->
+                <a href="/agences/<%= item._id %>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ?');"><button class="trashBtn"><i class="far fa-trash-alt"></i></button></a>
+                </td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>

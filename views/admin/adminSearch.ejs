@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/tab.css">
+</head>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+    <h4>Employer</h4>
+    <table cellspacing='0' class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% employers.forEach(function(employer){ %>
+            <tr>
+                <td><%= employer._id %></td>
+                <td><%= employer.nom %></td>
+                <td><%= employer.prenom %></td>
+                <td><%= employer.email %></td>
+                <td><a href="/employers/<%= employer._id %>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?');"><button class="trashBtn"><i class="far fa-trash-alt"></i></button></a></td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+    <hr>
+
+    <h4>Responsable d'agence</h4>
+    <table cellspacing='0' class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% responsables.forEach(function(responsable){ %>
+            <tr>
+                <td><%= responsable._id %></td>
+                <td><%= responsable.nom %></td>
+                <td><%= responsable.prenom %></td>
+                <td><%= responsable.email %></td>
+                <td>
+                    <a href="/agences/<%= responsable._id %>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ?');"><button class="trashBtn"><i class="far fa-trash-alt"></i></button></a>
+                </td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+    <hr>
+
+    <h4>Villa</h4>
+        <table cellspacing='0' class="table">
+            <thead>
+            <tr>
+                <th class="col-xs-3">Adresse</th>
+                <th class="col-xs-3">Ville</th>
+                <th class="col-xs-6">Terrain</th>
+                <th class="col-xs-3">Surface</th>
+                <th class="col-xs-3">Chambree</th>
+                <th class="col-xs-6">Salle De Bain</th>
+                <th class="col-xs-3">Toilette</th>
+                <th class="col-xs-6">Prix</th>
+                <th class="col-xs-3">Date reservation</th>
+                <th class="col-xs-3">Description</th>
+                <th class="col-xs-6">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% villas.forEach(function(villa){ %>
+                <tr>
+                    <td><%= villa.adresse %></td>
+                    <td><%= villa.ville %></td>
+                    <td><%= villa.terrain %></td>
+                    <td><%= villa.surface %></td>
+                    <td><%= villa.chambre %></td>
+                    <td><%= villa.salleDeBain %></td>
+                    <td><%= villa.toilette %></td>
+                    <td><%= villa.prix %></td>
+                    <td><%= villa.dateD %> - <%= villa.dateF %></td>
+                    <td><%= villa.description %></td>
+                    <td>
+                        <a href="/updateVilla/<%= villa._id %>" onclick="return confirm('Êtes-vous sûr de vouloir mise à ajour cet villa ?');"><button class="penBtn"><i class="fas fa-pen-alt"></i></button></a>
+                        <a href="/deleteVilla/<%= villa._id %>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet villa ?');"><button class="trashBtn"><i class="far fa-trash-alt"></i></button></a>
+                    </td>
+                </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    <hr>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/tab.css">
+</head>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+    <table class="table">
+        <thead>
+        <tr>
+            <th class="col-xs-3">Adresse</th>
+            <th class="col-xs-3">Ville</th>
+            <th class="col-xs-6">Prix</th>
+            <th class="col-xs-3">Date reservation</th>
+            <th class="col-xs-3">Reserver par </th>
+        </tr>
+        </thead>
+        <tbody>
+        <% items.forEach(function(item){ %>
+            <tr>
+                <td><%= item.adresse %></td>
+                <td><%= item.ville %></td>
+                <td><%= item.prix %></td>
+                <td><%= item.dateD %> - <%= item.dateF %></td>
+                <td><%= item.userFullname %></td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>

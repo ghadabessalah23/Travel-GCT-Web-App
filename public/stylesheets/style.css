@@ -1,0 +1,824 @@
+*{margin:0; padding: 0;}
+.error-container{
+    width:100%;
+    height: 50px;
+    border:none;
+    border-radius: 5px;
+    background-color: #FFD2D2;
+    color: #D8000C;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.error-msg{
+    line-height: 50px;
+}
+.succes-container{
+    width:100%;
+    height: 50px;
+    border:none;
+    border-radius: 5px;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    visibility: hidden;
+}
+.header-container{
+    width:100%; height:60px;
+    background-color: #FFF;
+}
+.nav-header{width:90%; height:60px; margin-left:5%; }
+#logo {
+    position: relative;
+    z-index: 2;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    font-weight: 700;
+    float: left;
+    padding-left: 40px;
+}
+#logo i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #F78536;
+    background: rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+#logo a {
+    color: #F78536;
+}
+#logo a:hover, #logo a:focus {
+    color: #F78536 !important;
+}
+
+.menu{
+    margin-left:20%;
+    float: right;
+}
+.menu li{
+    text-decoration:none;
+    display:inline-block;
+    width:100px;
+    height:60px;
+    line-height: 60px;
+    margin-top:20px;
+}
+.menu li a{
+    text-decoration: none;
+    text-align: center;
+    color:#222;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu li a:hover{ color:#F78536;}
+#HOME,#CONTACT,#HOTEL,#ABOUTUS{width:100%;height:100%;}
+#HOME{ position: relative;}
+#HOME img {
+    width: 100%;
+    height: 100%;
+}
+#HOME .btn-wrap{
+    position:absolute;
+    width:500px;
+    height:50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+#HOME .btn {
+    display: inline-block;
+    width:240px;
+    height: 50px;
+    position: relative;
+    background-color: transparent;
+    color: #222;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: 2px solid #222;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#HOME .btn:hover {
+    background-color: #222;
+    color:#FFF;
+}
+#HOTEL h3,#CONTACT h3,#ABOUTUS h3{
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+    color: #5a5a5a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    top:30px;
+}
+#HOTEL h4{
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    color: #5a5a5a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    top:30px;
+}
+.hotel-wrapper {
+    margin-top:50px;
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+
+.box > img {
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+}
+#ABOUTUS .info-wrap{
+    width:90%;
+    margin-left: 5%;
+}
+.rocket {
+    float:left;
+    width:500px;
+    height: 500px;
+}
+.about-info{
+    float:right;
+    width:700px;
+    margin-top:120px;
+}
+.about-info h4{
+    font-size: 16px;
+    font-weight: 100;
+    position: relative;
+    color: #5a5a5a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    top:30px;
+}
+/******************************************************************************************************************************************
+/*** REGISTER EJS ***/
+.reg-container{
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+    width:80%;
+    height:auto;
+    background-color:#FFF ;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border:solid 1px #BDC3C7;
+}
+.register-head{
+    width:100%;
+    height: 50px;
+    background-color: #f39c12 ;
+}
+.register-head h3{
+    font-family: 'CRYSIS';
+    text-align: center;
+    color:#FFF;
+    line-height:50px;
+}
+.device{
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.register-body{
+    width:700px;
+    height:auto;
+    margin-left:400px;
+    margin-top:50px;
+}
+.Sp1{ border:none; margin-bottom: 10px;}
+.input-text{
+    float:left;
+    width:300px;
+    height: 40px;
+    border :none;
+    font-family: 'roboto';
+    font-size: 13px;
+    font-weight: 300;
+    margin-left:25px;
+    background:#F0F0E9;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.valid,.cancel{
+    width:150px;
+    height:40px;
+    border:none;
+    border-radius:5px;
+    margin-left:25px;
+    cursor: pointer;
+}
+
+.valid{
+    background:#f39c12;
+    color:#fff;
+    font-family: 'Agency FB';
+    font-size: 15px;
+    line-height: 40px;
+}
+.cancel{
+    background:#fff;
+    color: #f39c12;
+    font-family: 'Agency FB';
+    font-size: 15px;
+    line-height: 40px;
+    border:solid 1px #f39c12;
+}
+/******************************************************************************************************************************************
+/*** LOGIN EJS ***/
+.log-container {
+    width: 275px;
+    height:330px;
+    background: #ecf0f1;
+    padding: 0 30px 30px 30px;
+    margin: 60px auto;
+    margin-top:150px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.adminlogo {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -40px;
+    height: 80px;
+    width: 80px;
+    background:url('/images/Administrator-32.png') center center no-repeat,#f39c12;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+
+.log-container h1 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    font-family: agency FB;
+    color: #555;
+}
+
+.login-input{
+    width: 100%;
+    background: #bdc3c7;
+    border: none;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+.login-input:focus {
+    outline: none;
+}
+
+.login-submit{
+    margin-top: 10px;
+    width:100%;
+    height:40px;
+    border-radius: 5px;
+    background-color:  #54BBFF;
+    font-family: 'roboto';
+    font-weight: bold;
+    color:#fff;
+    text-transform: uppercase;
+    border:none;
+    cursor: pointer;
+    float: right;
+
+}
+.login-submit:hover{
+    background-color: #000;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+.question{
+    color: #222;
+    font-size: 12px;
+    line-height: 25px;
+    font-family: Roboto;
+    margin-top:15px;
+}
+.responce{
+    color: #2E86C1;
+    font-size: 12px;
+    line-height: 25px;
+    font-family: Roboto;
+    margin-top:15px;
+}
+/*ADMIN LEFT SIDE BAR */
+#LeftsideBar{width:20%; height: 100%; position:fixed;}
+.LeftsideBar-head{
+    width:100%;
+    height:60px;
+    background-color: #8E44AD;
+    text-align: center;
+}
+.LeftsideBar-head span{
+    line-height: 60px;
+    font-weight: bolder;
+    font-family: 'CRYSIS';
+    color: #FFF;
+    text-align: center;
+}
+.LeftsideBar-body{width: 100%;
+    height: 100%;
+    background-color: #1a2226;
+}
+.userSec{
+    width:100%;
+    height:65px;
+    padding: 10px;
+}
+.userSec-logo{
+    float: left;
+    margin-right:20px;
+    width:50px;
+    height: 50px;
+}
+.usrLogo{
+    width:50px;
+    height: 50px;
+}
+.userSec-info .info{
+    color:#FFF;
+    font-family: "Agency FB";
+    font-size:16px;
+}
+.userSec-info .stat{
+    color:#FFF;
+    font-family: "Agency FB";
+    font-size:14px;
+}
+.fa-circle{color: #1E8449;}
+.searchBox{
+    width:100%;
+    height:60px;
+}
+.searchInput{
+    width:90%;
+    height:35px;
+    border:none;
+    margin-left:10px;
+    border-radius: 5px;
+    padding:5px;
+    background-color: #374850;
+    font-family:"Agency FB";
+    font-weight: bold;
+    font-size:18px;
+    line-height: 40px;
+}
+.searchInput:hover{background-color: #FFF;}
+.fa-search{color:#999;}
+.menuInfo{
+    width:100%;
+    height: 30px;
+    margin-top:10px;
+}
+.menuInfo span{
+    color:#374850;
+    font-size: 12px;
+    font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin-top:20px;
+    line-height: 30px;
+    margin-left:10px;
+}
+.menu-wrapper{
+    width:100%;
+    background-color: #1a2226;
+}
+.mainMenu li{
+    width:100%;
+    height:40px;
+    display: block;
+    text-decoration: none;
+
+}
+.mainMenu li:hover{
+    background-color: #8E44AD;
+}
+.mainMenu li a{
+    margin-left:30px;
+    font-family:"Agency FB";
+    font-size: 17px;
+    line-height: 40px;
+    font-weight: bold;
+    color:#FFF;
+    text-decoration:none;
+}
+.fa-upload,.fa-list-alt,.fa-fort-awesome-alt,.fa-users,.fa-bus, .fa-user,.fa-sign-out-alt{
+    margin-right: 40px;
+}
+
+/******************************************************************************************************************************************
+/*** VILLA EJS ***/
+.villa-container{
+    width:90%;
+    height:auto;
+    margin-left:5%;
+    margin-top:5%;
+}
+.villa-cover{
+    float: left;
+    width:300px;
+    height: 300px;
+    padding: 20px;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+.vCover{
+    width:100%;
+    height:100%;
+}
+.villa-body{
+    float: right;
+    width:600px;
+}
+.villa-tab{
+    width:100%;
+    height: auto;
+    margin-bottom: 10px;margin-top:30px;
+}
+.villa-tab tr td{
+    width:40%;
+}
+.villa-tab td{
+    font-family: 'roboto';
+    font-size: 15px;
+    line-height: 40px;
+    color:#222;
+    font-weight: bolder;
+}
+.villa-file-wrapper{
+    width:100%;
+}
+input[type="file"]{
+    position: absolute;
+    opacity: 0;
+}
+.villa-label-file{
+    float: left;
+    positon:absolute;
+    color:#FFF;
+    height: 40px;
+    width:60px;
+    background-color: #f5af09;
+    font-size:15px;
+    font-family: Roboto;
+    font-weight: bold;
+    line-height: 40px;
+    display:flex;
+    justify-content:center;
+    border-radius: 5px;
+}
+.villa-filename{
+    float: right;
+    width:75%;
+    height: 40px;
+    border :none;
+    font-family: 'roboto';
+    font-size: 15px;
+    font-weight: 300;
+    background:#F0F0E9;
+    border-radius: 5px;
+    padding-left: 10px;
+    color:#222;
+    line-height: 40px;
+}
+.villa-input{
+    float:left;
+    width:300px;
+    height: 40px;
+    border :none;
+    font-family: 'roboto';
+    font-size: 13px;
+    font-weight: 300;
+    margin-left:25px;
+    background:#F0F0E9;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.textarea{
+    float:left;
+    width:300px;
+    height: 150px;
+    border :none;
+    font-family: 'roboto';
+    font-size: 13px;
+    font-weight: 300;
+    margin-left:25px;
+    background:#F0F0E9;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+/**********/
+#RightsideBar{
+    width:80%;
+    height: 100%;
+    float: right;
+}
+.Filebox{
+    display: inline-block;
+    width:300px;
+    height:200px;
+    border-radius: 5px;
+    float: left;
+    margin-top:50px;
+    margin-left:50px;
+    cursor: pointer;
+}
+.sheet{background-color: #1E8449;}
+.pdf{background-color: #CB4335;}
+.word{background-color: #2E86C1;}
+
+.Filebox:hover{
+    background-color: #1a2226;
+}
+
+.fa-file-excel,.fa-file-pdf,.fa-file-word{
+    font-size:100px;
+    line-height: 200px;
+    color:#FFF;
+    margin-left:100px;
+}
+.file-form{
+    border:none;
+    margin-top:250px;
+}
+#sheet-ups,#pdf-ups,#word-ups{
+    width:90%;
+    height: 200px;
+    margin-left: 5%;
+    border:1px solid #BDC3C7;
+    border-radius:5px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    display: none;
+
+}
+.label{
+    font-size: 20px;
+    font-family: Roboto;
+    padding:10px;
+}
+.file-wrapper{
+    width:80%;
+    margin-left:10%;
+    margin-top:30px;
+}
+input[type="file"]{
+    position: absolute;
+    opacity: 0;
+}
+.label-file{
+    float: left;
+    positon:absolute;
+    color:#FFF;
+    height: 40px;
+    width:25%;
+    background-color: #f5af09;
+    font-size:15px;
+    font-family: Roboto;
+    font-weight: bold;
+    line-height: 40px;
+    display:flex;
+    justify-content:center;
+    border-radius: 5px;
+}
+.fa-folder-open{line-height: 40px;}
+.filename{
+    float: right;
+    width:70%;
+    height: 40px;
+    border :none;
+    font-family: 'roboto';
+    font-size: 15px;
+    font-weight: 300;
+    margin-left:25px;
+    background:#F0F0E9;
+    border-radius: 5px;
+    padding-left: 10px;
+    color:#222;
+    line-height: 40px;
+}
+.upload-btn{
+    width:250px;
+    height:40px;
+    background-color: #000000;
+    border :none;
+    font-family: 'roboto';
+    font-size: 13px;
+    text-align: center;
+    color:#FFF;
+    margin-top:20px;
+    margin-left:13%;
+    font-weight: bold;
+    border-radius:5px;
+
+}
+/**********************************************************/
+.action-container{
+    margin-top:200px;
+    margin-left:80px;
+}
+.ActionBox{
+    margin-top:200px;
+    display: inline-block;
+    width:300px;
+    height:200px;
+    border-radius: 5px;
+    float: left;
+    margin-left:50px;
+    cursor: pointer;
+    position: relative;
+}
+.green{background-color: #1E8449;}
+.red{background-color: #CB4335;}
+.blue{background-color: #2E86C1;}
+.fa-puzzle-piece, .fa-tools, .fa-eye{
+    font-size:100px;
+    line-height: 200px;
+    color:#FFF;
+    margin-left:100px;
+}
+.overlayB {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2E86C1;
+}
+
+.ActionBox:hover .overlayB {
+    opacity: 1;
+}
+
+.overlayG {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1E8449;
+}
+
+.ActionBox:hover .overlayG {
+    opacity: 1;
+}
+
+.overlayR {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #CB4335;
+}
+
+.ActionBox:hover .overlayR {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    font-family: 'Agency FB';
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/**********/
+.profile-container{
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+    width:700px;
+    height:auto;
+    background-color:#FFF ;
+    position: fixed;
+    top:50%;
+    left:60%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border:solid 1px #BDC3C7;
+}
+.profile-head{
+    width:100%;
+    height: 50px;
+    background-color: #8E44AD ;
+}
+.profile-head h3{
+    font-family: 'CRYSIS';
+    text-align: center;
+    color:#FFF;
+    line-height:50px;
+}
+.profile-body{
+    width:700px;
+    height:auto;
+    margin-top:25px;
+}
+.profile-logo{
+    width:150px;
+    height: 150px;
+    background-color: #222;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: 40px;
+}
+.fa-pencil-alt{
+    color: #FFF;
+    font-size: 40px;
+    line-height: 150px;
+    justify-content:center;
+    margin-left:55px;
+}
+.trashBtn{
+    width:40px;
+    height:40px;
+    background-color: #E74C3C;
+    font-size: 15px;
+    line-height: 40px;
+    color:#FFF;
+    border:none;
+    cursor: pointer;
+}
+.penBtn{
+    width:40px;
+    height:40px;
+    background-color: #27AE60;
+    font-size: 15px;
+    line-height: 40px;
+    color:#FFF;
+    border:none;
+    cursor: pointer;
+}
+.addRes{
+    width:200px;
+    height: 50px;
+    border:none;
+    background-color: #2E86C1;
+    color:#FFF;
+    font-family: "Agency FB";
+    font-size: 20px;
+    line-height: 50px;
+    margin-left:5%;
+    margin-top:40px;
+    cursor: pointer;
+}

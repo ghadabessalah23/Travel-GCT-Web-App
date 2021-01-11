@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/user.css">
+    <link rel="stylesheet" href="/stylesheets/tab.css">
+</head>
+<body>
+<%- include employerMenu.ejs %>
+<section id="mainSection">
+    <h4>Hotel</h4>
+    <table cellspacing='0' class="table">
+        <thead>
+        <tr>
+            <th scope="col">Hotel</th>
+            <th scope="col">Date</th>
+            <th scope="col">LDP</th>
+            <th scope="col">DP</th>
+            <th scope="col">PC</th>
+            <th scope="col">All-in</th>
+            <th scope="col">Soft All-in</th>
+            <th scope="col">Sup single</th>
+            <th scope="col">sup V mer</th>
+            <th scope="col">2 e 11 ans  + 2 adultes</th>
+            <th scope="col">2 e 12 ans + 1 adulte</th>
+            <th scope="col">Reduction 3 eme lit</th>
+            <th scope="col">Reduction 3eme lit</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% bookins.forEach(function(bookin){ %>
+            <tr>
+                <td><%= bookin.hotel %></td>
+                <td><%= bookin.Date %></td>
+                <td><%= bookin.LDP %></td>
+                <td><%= bookin.DP %></td>
+                <td><%= bookin.PC %></td>
+                <td><%= bookin.All_in %></td>
+                <td><%= bookin.Soft_All_in %></td>
+                <td><%= bookin.Sup_single %></td>
+                <td><%= bookin.sup_V_mer %></td>
+                <td><%= bookin.enfant_2adult %></td>
+                <td><%= bookin.enfant_1adult %></td>
+                <td><%= bookin.Reduction_3_eme_lit %></td>
+                <td><%= bookin.Reduction_3eme_lit %></td>
+                <td>
+                    <a href="/employerHotel/<%= bookin._id %>/<%= _id %>/<%= nom  %> <%= prenom  %>/<%= bookin.hotel%>"><button class="takeHotel"><i class="fas fa-check-circle"></i> Reserver</button></a>
+                </td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+    <hr>
+
+    <h4>Villa</h4>
+    <% items.forEach(function(item){ %>
+        <% if (typeof msg !== "undefined") { %>
+            <fieldset class="Sp1">
+                <div class="error-container">
+                    <span class="error-msg"><%= typeof msg != 'undefined' ? msg : '' %></span>
+                </div>
+            </fieldset>
+        <% } %>
+        <div class="oneVilla">
+            <div class="villaImg">
+                <img src="/images/villa.jpg" class="villa-cover">
+            </div>
+            <div class="villaInfo">
+                <span>Adresse :  <%= item.adresse %></span><br>
+                <span>Terrain :  <%= item.terrain %></span><br>
+                <span>Surface :  <%= item.surface %></span><br>
+                <span>Chambre :  <%= item.chambre %></span><br>
+                <span>Salle de bain : <%= item.salleDeBain %></span><br>
+                <span>Toilette :  <%= item.toilette %></span><br>
+            </div>
+            <div class="villaInfo">
+                <span>Prix : <%= item.prix %></span><br>
+                <span>Date :  <%= item.dateD %> - <%= item.dateF %></span><br>
+                <span>Description : <%= item.description %></span><br>
+            </div>
+            <div class="villaBtn">
+                <a href="/employerVilla/<%= item._id %>/<%= _id %>/<%= nom  %> <%= prenom  %>"><button class="takeIt"><i class="fas fa-check-circle"></i> Reserver</button></a>
+            </div>
+        </div>
+        <hr>
+    <% }) %>
+    <hr>
+
+</section>
+</body>
+</html>

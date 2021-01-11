@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+
+        <a href="/addVilla">
+            <div class="ActionBox green">
+                <i class="fas fa-puzzle-piece"></i>
+                <div class="overlayG">
+                    <div class="text">Ajouter Villa</div>
+                </div>
+            </div>
+        </a>
+        <a href="/gereVilla">
+            <div class="ActionBox red">
+                <i class="fas fa-tools"></i>
+                <div class="overlayR">
+                    <div class="text">Gérer Villa</div>
+                </div>
+            </div>
+        </a>
+        <a href="/reservationVilla">
+            <div class="ActionBox blue">
+                <i class="fas fa-eye"></i>
+                <div class="overlayB">
+                    <div class="text">Reservation Villa</div>
+                </div>
+            </div>
+        </a>
+</section>
+</body>
+</html>

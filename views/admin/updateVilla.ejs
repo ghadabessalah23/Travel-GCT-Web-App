@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+    <% items.forEach(function(item){ %>
+    <form action="/updateVilla/<%= item._id %>" method="post">
+    <div class="villa-container">
+            <div class="villa-cover">
+                <img src="/images/villa.jpg" class="vCover">
+            </div>
+            <div class="villa-body">
+                <% if (typeof msg !== "undefined") { %>
+                    <div class="villa-tab">
+                        <div class="error-container">
+                            <span class="error-msg"><%= typeof msg != 'undefined' ? msg : '' %></span>
+                        </div>
+                    </div>
+                <% } %>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Adresse :</td>
+                        <td><input type="text" class="villa-input" placeholder="Adresse" name="adresse" value="<%=item.adresse %>"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <select class="villa-input" name="ville" >
+                                <option value="0">Select une ville :</option>
+                                <option value="Ariana">Ariana</option>
+                                <option value="Beja">Beja</option>
+                                <option value="Ben Arous">Ben Arous</option>
+                                <option value="Bizerte">Bizerte</option>
+                                <option value="Gabes">Gabes</option>
+                                <option value="Gafsa">Gafsa</option>
+                                <option value="Jendouba">Jendouba</option>
+                                <option value="Kairouan">Kairouan</option>
+                                <option value="Kasserine">Kasserine</option>
+                                <option value="Kebili">Kebili</option>
+                                <option value="Le Kef">Le Kef</option>
+                                <option value="Mahdia">Mahdia</option>
+                                <option value="La Manouba">La Manouba</option>
+                                <option value="Médenine">Médenine</option>
+                                <option value="Monastir">Monastir</option>
+                                <option value="Nabeul">Nabeul</option>
+                                <option value="Sfax">Sfax</option>
+                                <option value="Sidi Bouzid">Sidi Bouzid</option>
+                                <option value="Siliana">Siliana</option>
+                                <option value="Sousse">Sousse</option>
+                                <option value="Tataouine">Tataouine</option>
+                                <option value="Tozeur">Tozeur</option>
+                                <option value="Tunis">Tunis</option>
+                                <option value="Zaghouan">Zaghouan</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Le terrain :</td>
+                        <td><input type="text" class="villa-input" placeholder="Terrain en m²" name="terrain" value="<%=item.terrain %>"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>La Maison :</td>
+                        <td><input type="text" class="villa-input" placeholder="Surface en m²" name="surface" value="<%=item.surface %>"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="text" class="villa-input" placeholder="Chambre(s)" name="chambre" value="<%= item.chambre %>"><br>
+                            <input type="text" class="villa-input" placeholder="Salle de bain(s)" name="salleDeBain" value="<%= item.salleDeBain %>"><br>
+                            <input type="text" class="villa-input" placeholder="Toilette(s)" name="toilette" value="<%= item.toilette %>"><br>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Prix :</td>
+                        <td><input type="text" class="villa-input" placeholder="Prix en DT" name="prix" value="<%= item.prix %>"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Date :</td>
+                        <td><input type="date" class="villa-input"  placeholder="Date debut : DD-MM-YYYY" name="dateD" value="<%=item.dateD %>"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="date" class="villa-input" placeholder="Date fin : DD-MM-YYYY" name="dateF" value="<%=item.dateF  %>"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td>Description :</td>
+                        <td><textarea class="textarea" placeholder="Description" name="description" value="<%=item.description  %>"></textarea></td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="villa-tab">
+                    <tr>
+                        <td><input type="submit" value="ENREGISTRER" class="valid"> </td>
+                        <td><input type="reset" value="ANNULER" class="cancel"></td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    </form>
+        <% }) %>
+</section>
+</body>
+</html>

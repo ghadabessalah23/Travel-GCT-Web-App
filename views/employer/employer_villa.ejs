@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/user.css">
+</head>
+<body>
+<%- include employerMenu.ejs %>
+<section id="mainSection">
+    <% if (typeof msg !== "undefined") { %>
+        <fieldset class="Sp1">
+            <div class="error-container">
+                <span class="error-msg"><%= typeof msg != 'undefined' ? msg : '' %></span>
+            </div>
+        </fieldset>
+    <% } %>
+    <input  hidden type="text" value="<%= _id %>" name="userId">
+    <% items.forEach(function(item){ %>
+        <% if (typeof msg !== "undefined") { %>
+            <fieldset class="Sp1">
+                <div class="error-container">
+                    <span class="error-msg"><%= typeof msg != 'undefined' ? msg : '' %></span>
+                </div>
+            </fieldset>
+        <% } %>
+    <div class="oneVilla">
+        <div class="villaImg">
+            <img src="/images/villa.jpg" class="villa-cover">
+        </div>
+        <div class="villaInfo">
+            <span>Adresse :  <%= item.adresse %></span><br>
+            <span>Terrain :  <%= item.terrain %></span><br>
+            <span>Surface :  <%= item.surface %></span><br>
+            <span>Chambre :  <%= item.chambre %></span><br>
+            <span>Salle de bain : <%= item.salleDeBain %></span><br>
+            <span>Toilette :  <%= item.toilette %></span><br>
+        </div>
+        <div class="villaInfo">
+            <span>Prix : <%= item.prix %></span><br>
+            <span>Date :  <%= item.dateD %> - <%= item.dateF %></span><br>
+            <span>Description : <%= item.description %></span><br>
+        </div>
+        <div class="villaBtn">
+            <a href="/employerVilla/<%= item._id %>/<%= _id %>/<%= nom  %> <%= prenom  %>"><button class="takeIt"><i class="fas fa-check-circle"></i> Reserver</button></a>
+        </div>
+    </div>
+    <hr>
+        <% }) %>
+</section>
+</body>
+</html>

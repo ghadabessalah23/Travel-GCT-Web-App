@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/agence.css">
+    <link rel="stylesheet" href="/stylesheets/tab.css">
+</head>
+<body>
+<%- include agenceMenu.ejs %>
+<table cellspacing='0' class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Hôtel</th>
+        <th scope="col">Réservé par</th>
+        <th scope="col">Réservé le</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% items.forEach(function(item){ %>
+        <tr>
+            <td><%= item._id %></td>
+            <td><%= item.hotel %></td>
+            <td><%= item.userFullname %></td>
+            <td><%= item.fullTime %></td>
+        </tr>
+    <% }) %>
+    </tbody>
+</table>
+</body>
+</html>

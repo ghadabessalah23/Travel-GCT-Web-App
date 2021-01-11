@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/tab.css">
+</head>
+<body>
+<%- include adminLeftSideBar.ejs %>
+<section id="RightsideBar">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th class="col-xs-3">Adresse</th>
+                <th class="col-xs-3">Ville</th>
+                <th class="col-xs-6">Terrain</th>
+                <th class="col-xs-3">Surface</th>
+                <th class="col-xs-3">Chambree</th>
+                <th class="col-xs-6">Salle De Bain</th>
+                <th class="col-xs-3">Toilette</th>
+                <th class="col-xs-6">Prix</th>
+                <th class="col-xs-3">Date reservation</th>
+                <th class="col-xs-3">Description</th>
+                <th class="col-xs-6">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% items.forEach(function(item){ %>
+            <tr>
+                <td><%= item.adresse %></td>
+                <td><%= item.ville %></td>
+                <td><%= item.terrain %></td>
+                <td><%= item.surface %></td>
+                <td><%= item.chambre %></td>
+                <td><%= item.salleDeBain %></td>
+                <td><%= item.toilette %></td>
+                <td><%= item.prix %></td>
+                <td><%= item.dateD %> - <%= item.dateF %></td>
+                <td><%= item.description %></td>
+                <td>
+                    <a href="/updateVilla/<%= item._id %>" onclick="return confirm('Êtes-vous sûr de vouloir mise à ajour cet villa ?');"><button class="penBtn"><i class="fas fa-pen-alt"></i></button></a>
+                    <a href="/deleteVilla/<%= item._id %>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet villa ?');"><button class="trashBtn"><i class="far fa-trash-alt"></i></button></a>
+                </td>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+
+</section>
+</body>
+</html>

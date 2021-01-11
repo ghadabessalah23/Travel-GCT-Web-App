@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %>  </title>
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<section id="login-wrap">
+    <div class="log-container">
+        <span class="adminlogo"></span>
+        <h1>FORMULAIRE DE CONNEXION</h1>
+        <form method="POST" action="/login">
+            <% if (typeof msg !== "undefined") { %>
+            <div class="error-container">
+                <span class="error-msg"><%= typeof msg != 'undefined' ? msg : '' %></span>
+            </div>
+            <% } %>
+            <input class='login-input' placeholder='Email' type='text' name="email"/>
+            <input class='login-input' placeholder='********' type='password' name="password"/>
+            <input type="submit" value="Connexion" class="login-submit"/></br>
+                <span class="question">Vous n'avez pas de compte?</span><br>
+            <a href="/register" class="responce">Créer un compte</a>
+        </form>
+    </div>
+
+</section>
+</body>
+</html>

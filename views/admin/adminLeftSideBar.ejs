@@ -1,0 +1,35 @@
+<section id="LeftsideBar">
+    <div class="LeftsideBar-head">
+        <span>Travel | Admin</span>
+    </div>
+    <div class="LeftsideBar-body">
+        <div class="userSec">
+            <div class="userSec-logo">
+                <img src="/images/defaultuserimage.png" class="usrLogo">
+            </div>
+            <div class="userSec-info">
+                <span class="info"><%= nom %> <%= prenom %></span><br>
+                <span class="info"><%= email %></span><br>
+                <span class="stat"><i class="fa fa-circle"></i> online</span>
+            </div>
+        </div>
+        <class class="searchBox">
+            <form action="/adminSearch" method="post">
+                <input type="text" placeholder="Reherche..." class="searchInput" name="searchTxt">
+            </form>
+        </class>
+        <div class="menuInfo">
+            <span>MAIN NAVIGATION</span>
+        </div>
+        <div class="menu-wrapper">
+            <ul class="mainMenu">
+                <li><a href="/admin"><i class ="fa fa-upload"></i>Upload File</a></li>
+                <li><a href="/villa"><i class="fab fa-fort-awesome-alt"></i>Villa</a></li>
+                <li><a href="/employers"><i class="fas fa-users"></i>Employer</a></li>
+                <li><a href="/agences"><i class="fas fa-bus"></i>Agence</a></li>
+                <li><a href="/profile"><i class ="fa fa-user"></i>Profile</a></li>
+                <li><a href="/logout"><i class="fas fa-sign-out-alt"></i>Déconnexion</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
